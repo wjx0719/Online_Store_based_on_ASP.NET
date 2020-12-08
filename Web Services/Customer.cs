@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace Web_Services
+{
+    public class Customer
+    {
+        int id;
+        string name;
+        string password;
+        string phone;
+        string email;
+        string address;
+
+        public string Name { get => name; set => name = value; }
+        public string Password { get => password; set => password = value; }
+        public string Phone { get => phone; set => phone = value; }
+        public string Email { get => email; set => email = value; }
+        public string Address { get => address; set => address = value; }
+        public int ID { get => id; set => id = value; }
+    }
+}

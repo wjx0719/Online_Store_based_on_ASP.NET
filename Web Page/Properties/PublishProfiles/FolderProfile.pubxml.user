@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\87181\Desktop\Online Shopping\Web Page\bin\app.publish\</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AdminLogin.aspx">
+      <publishTime>07/30/2020 11:02:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/05/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/08/2018 12:18:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/08/2018 12:18:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/08/2018 12:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 18:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/05/2016 18:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/16/2018 03:29:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>11/05/2016 18:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>11/05/2016 18:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 18:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 18:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>11/05/2016 18:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 18:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/16/2018 03:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 18:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 18:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 18:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/05/2016 18:57:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>11/05/2016 18:57:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>11/05/2016 18:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 18:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>11/05/2016 18:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/08/2018 12:18:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/08/2018 12:09:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/08/2018 12:18:16</publishTime>
+    </File>
+    <File Include="bin/Web Page.dll">
+      <publishTime>08/10/2020 14:11:53</publishTime>
+    </File>
+    <File Include="bin/Web Page.pdb">
+      <publishTime>08/10/2020 14:11:53</publishTime>
+    </File>
+    <File Include="Connected Services/CustomerService/Web_Page.CustomerService.Customer.datasource">
+      <publishTime>08/10/2020 14:09:22</publishTime>
+    </File>
+    <File Include="Connected Services/CustomerService/Web_Page.CustomerService.CustomerLoginResponse.datasource">
+      <publishTime>08/10/2020 14:09:22</publishTime>
+    </File>
+    <File Include="Connected Services/CustomerService/Web_Page.CustomerService.CustomerRegisterResponse.datasource">
+      <publishTime>08/10/2020 14:09:22</publishTime>
+    </File>
+    <File Include="Connected Services/CustomerService/Web_Page.CustomerService.GetCustomerInfoResponse.datasource">
+      <publishTime>08/10/2020 14:09:22</publishTime>
+    </File>
+    <File Include="Connected Services/CustomerService/Web_Page.CustomerService.GetCustomerInfoWithIDResponse.datasource">
+      <publishTime>08/10/2020 14:09:22</publishTime>
+    </File>
+    <File Include="Connected Services/CustomerService/Web_Page.CustomerService.UpdateCustomerAddressResponse.datasource">
+      <publishTime>08/10/2020 14:09:22</publishTime>
+    </File>
+    <File Include="Connected Services/CustomerService/Web_Page.CustomerService.UpdateCustomerEmailResponse.datasource">
+      <publishTime>08/10/2020 14:09:22</publishTime>
+    </File>
+    <File Include="Connected Services/CustomerService/Web_Page.CustomerService.UpdateCustomerPasswordResponse.datasource">
+      <publishTime>08/10/2020 14:09:22</publishTime>
+    </File>
+    <File Include="Connected Services/CustomerService/Web_Page.CustomerService.UpdateCustomerPhoneResponse.datasource">
+      <publishTime>08/10/2020 14:09:22</publishTime>
+    </File>
+    <File Include="Connected Services/OrderService/Web_Page.OrderService.GetOrderInfoForCustomerResponse.datasource">
+      <publishTime>08/10/2020 14:10:45</publishTime>
+    </File>
+    <File Include="Connected Services/OrderService/Web_Page.OrderService.GetOrderInfoForStoreResponse.datasource">
+      <publishTime>08/10/2020 14:10:45</publishTime>
+    </File>
+    <File Include="Connected Services/OrderService/Web_Page.OrderService.Order.datasource">
+      <publishTime>08/10/2020 14:10:45</publishTime>
+    </File>
+    <File Include="Connected Services/OrderService/Web_Page.OrderService.UpdateOrderStateResponse.datasource">
+      <publishTime>08/10/2020 14:10:45</publishTime>
+    </File>
+    <File Include="Connected Services/ProductService/Web_Page.ProductService.GetAllProductsResponse.datasource">
+      <publishTime>08/10/2020 14:10:17</publishTime>
+    </File>
+    <File Include="Connected Services/ProductService/Web_Page.ProductService.GetProductInfoResponse.datasource">
+      <publishTime>08/10/2020 14:10:17</publishTime>
+    </File>
+    <File Include="Connected Services/ProductService/Web_Page.ProductService.GetProductsInfoForStoreResponse.datasource">
+      <publishTime>08/10/2020 14:10:17</publishTime>
+    </File>
+    <File Include="Connected Services/ProductService/Web_Page.ProductService.GetProductsInfoWithNameResponse.datasource">
+      <publishTime>08/10/2020 14:10:17</publishTime>
+    </File>
+    <File Include="Connected Services/ProductService/Web_Page.ProductService.Product.datasource">
+      <publishTime>08/10/2020 14:10:17</publishTime>
+    </File>
+    <File Include="Connected Services/ProductService/Web_Page.ProductService.ProductRegisterResponse.datasource">
+      <publishTime>08/10/2020 14:10:17</publishTime>
+    </File>
+    <File Include="Connected Services/ProductService/Web_Page.ProductService.UpdateProductDescriptionResponse.datasource">
+      <publishTime>08/10/2020 14:10:17</publishTime>
+    </File>
+    <File Include="Connected Services/ProductService/Web_Page.ProductService.UpdateProductNameResponse.datasource">
+      <publishTime>08/10/2020 14:10:17</publishTime>
+    </File>
+    <File Include="Connected Services/StoreService/Web_Page.StoreService.GetStoreInfoResponse.datasource">
+      <publishTime>08/10/2020 14:09:46</publishTime>
+    </File>
+    <File Include="Connected Services/StoreService/Web_Page.StoreService.GetStoreInfoWithIDResponse.datasource">
+      <publishTime>08/10/2020 14:09:47</publishTime>
+    </File>
+    <File Include="Connected Services/StoreService/Web_Page.StoreService.Store.datasource">
+      <publishTime>08/10/2020 14:09:46</publishTime>
+    </File>
+    <File Include="Connected Services/StoreService/Web_Page.StoreService.StoreLoginResponse.datasource">
+      <publishTime>08/10/2020 14:09:46</publishTime>
+    </File>
+    <File Include="Connected Services/StoreService/Web_Page.StoreService.StoreRegisterResponse.datasource">
+      <publishTime>08/10/2020 14:09:46</publishTime>
+    </File>
+    <File Include="Connected Services/StoreService/Web_Page.StoreService.UpdateStoreEmailResponse.datasource">
+      <publishTime>08/10/2020 14:09:47</publishTime>
+    </File>
+    <File Include="Connected Services/StoreService/Web_Page.StoreService.UpdateStorePasswordResponse.datasource">
+      <publishTime>08/10/2020 14:09:47</publishTime>
+    </File>
+    <File Include="Connected Services/StoreService/Web_Page.StoreService.UpdateStorePhoneResponse.datasource">
+      <publishTime>08/10/2020 14:09:47</publishTime>
+    </File>
+    <File Include="css/AdminLogin.css">
+      <publishTime>07/30/2020 11:01:52</publishTime>
+    </File>
+    <File Include="css/CustomerInfo.css">
+      <publishTime>07/30/2020 19:33:23</publishTime>
+    </File>
+    <File Include="css/CustomerLogin.css">
+      <publishTime>07/30/2020 10:46:30</publishTime>
+    </File>
+    <File Include="css/CustomerManagementOrder.css">
+      <publishTime>08/10/2020 12:55:58</publishTime>
+    </File>
+    <File Include="css/CustomerRegister.css">
+      <publishTime>07/30/2020 19:17:32</publishTime>
+    </File>
+    <File Include="css/CustomerSetting.css">
+      <publishTime>08/01/2020 14:55:33</publishTime>
+    </File>
+    <File Include="css/CustomerShopping.css">
+      <publishTime>08/10/2020 13:10:59</publishTime>
+    </File>
+    <File Include="css/Index.css">
+      <publishTime>07/30/2020 10:06:28</publishTime>
+    </File>
+    <File Include="css/StoreInfo.css">
+      <publishTime>08/01/2020 14:40:05</publishTime>
+    </File>
+    <File Include="css/StoreLogin.css">
+      <publishTime>07/30/2020 10:46:42</publishTime>
+    </File>
+    <File Include="css/StoreManagementOrder.css">
+      <publishTime>08/10/2020 10:52:45</publishTime>
+    </File>
+    <File Include="css/StoreManagementProduct.css">
+      <publishTime>08/10/2020 10:41:27</publishTime>
+    </File>
+    <File Include="css/StoreModifyProduct.css">
+      <publishTime>08/07/2020 08:54:30</publishTime>
+    </File>
+    <File Include="css/StoreNewProduct.css">
+      <publishTime>08/05/2020 09:43:55</publishTime>
+    </File>
+    <File Include="css/StoreRegister.css">
+      <publishTime>08/01/2020 09:14:58</publishTime>
+    </File>
+    <File Include="css/StoreSetting.css">
+      <publishTime>08/02/2020 09:17:30</publishTime>
+    </File>
+    <File Include="CustomerInfo.aspx">
+      <publishTime>08/02/2020 09:42:55</publishTime>
+    </File>
+    <File Include="CustomerLogin.aspx">
+      <publishTime>07/30/2020 17:58:01</publishTime>
+    </File>
+    <File Include="CustomerManagementOrder.aspx">
+      <publishTime>08/10/2020 12:56:27</publishTime>
+    </File>
+    <File Include="CustomerRegister.aspx">
+      <publishTime>07/30/2020 19:17:30</publishTime>
+    </File>
+    <File Include="CustomerSetting.aspx">
+      <publishTime>08/08/2020 09:16:55</publishTime>
+    </File>
+    <File Include="CustomerShopping.aspx">
+      <publishTime>08/10/2020 13:06:48</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>07/30/2020 10:06:38</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>07/27/2020 14:41:21</publishTime>
+    </File>
+    <File Include="StoreInfo.aspx">
+      <publishTime>08/02/2020 09:42:56</publishTime>
+    </File>
+    <File Include="StoreLogin.aspx">
+      <publishTime>07/30/2020 11:01:19</publishTime>
+    </File>
+    <File Include="StoreManagementOrder.aspx">
+      <publishTime>08/10/2020 10:49:14</publishTime>
+    </File>
+    <File Include="StoreManagementProduct.aspx">
+      <publishTime>08/10/2020 10:47:34</publishTime>
+    </File>
+    <File Include="StoreModifyProduct.aspx">
+      <publishTime>08/07/2020 09:21:16</publishTime>
+    </File>
+    <File Include="StoreNewProduct.aspx">
+      <publishTime>08/10/2020 09:20:40</publishTime>
+    </File>
+    <File Include="StoreRegister.aspx">
+      <publishTime>08/01/2020 09:14:58</publishTime>
+    </File>
+    <File Include="StoreSetting.aspx">
+      <publishTime>08/02/2020 09:23:57</publishTime>
+    </File>
+    <File Include="style.css">
+      <publishTime>07/30/2020 10:00:27</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/10/2020 14:11:53</publishTime>
+    </File>
+    <File Include="WebForm1.aspx">
+      <publishTime>07/27/2020 14:41:20</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

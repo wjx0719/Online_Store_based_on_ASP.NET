@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CustomerRegister">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="customer" type="tns:Customer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Customer">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CustomerRegisterResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CustomerLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CustomerLoginResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerInfoResult" type="tns:Customer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerInfoWithID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerInfoWithIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerInfoWithIDResult" type="tns:Customer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllCustomers">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllCustomersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllCustomersResult" type="tns:ArrayOfCustomer" />
+            <s:element minOccurs="1" maxOccurs="1" name="customersnum" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCustomer">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Customer" nillable="true" type="tns:Customer" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateCustomerEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCustomerEmailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateCustomerPhone">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCustomerPhoneResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateCustomerAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCustomerAddressResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateCustomerPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCustomerPasswordResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CustomerRegisterSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerRegister" />
+  </wsdl:message>
+  <wsdl:message name="CustomerRegisterSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerLogin" />
+  </wsdl:message>
+  <wsdl:message name="CustomerLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerInfoWithIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerInfoWithID" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerInfoWithIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerInfoWithIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCustomersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllCustomers" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCustomersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerEmail" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerPhoneSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerPhone" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerPhoneSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerAddress" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerPassword" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerPasswordResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CustomerServiceSoap">
+    <wsdl:operation name="CustomerRegister">
+      <wsdl:input message="tns:CustomerRegisterSoapIn" />
+      <wsdl:output message="tns:CustomerRegisterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerLogin">
+      <wsdl:input message="tns:CustomerLoginSoapIn" />
+      <wsdl:output message="tns:CustomerLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInfo">
+      <wsdl:input message="tns:GetCustomerInfoSoapIn" />
+      <wsdl:output message="tns:GetCustomerInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInfoWithID">
+      <wsdl:input message="tns:GetCustomerInfoWithIDSoapIn" />
+      <wsdl:output message="tns:GetCustomerInfoWithIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCustomers">
+      <wsdl:input message="tns:GetAllCustomersSoapIn" />
+      <wsdl:output message="tns:GetAllCustomersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerEmail">
+      <wsdl:input message="tns:UpdateCustomerEmailSoapIn" />
+      <wsdl:output message="tns:UpdateCustomerEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerPhone">
+      <wsdl:input message="tns:UpdateCustomerPhoneSoapIn" />
+      <wsdl:output message="tns:UpdateCustomerPhoneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerAddress">
+      <wsdl:input message="tns:UpdateCustomerAddressSoapIn" />
+      <wsdl:output message="tns:UpdateCustomerAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerPassword">
+      <wsdl:input message="tns:UpdateCustomerPasswordSoapIn" />
+      <wsdl:output message="tns:UpdateCustomerPasswordSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CustomerServiceSoap" type="tns:CustomerServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CustomerRegister">
+      <soap:operation soapAction="http://tempuri.org/CustomerRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerLogin">
+      <soap:operation soapAction="http://tempuri.org/CustomerLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInfo">
+      <soap:operation soapAction="http://tempuri.org/GetCustomerInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInfoWithID">
+      <soap:operation soapAction="http://tempuri.org/GetCustomerInfoWithID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCustomers">
+      <soap:operation soapAction="http://tempuri.org/GetAllCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerEmail">
+      <soap:operation soapAction="http://tempuri.org/UpdateCustomerEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerPhone">
+      <soap:operation soapAction="http://tempuri.org/UpdateCustomerPhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerAddress">
+      <soap:operation soapAction="http://tempuri.org/UpdateCustomerAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerPassword">
+      <soap:operation soapAction="http://tempuri.org/UpdateCustomerPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CustomerServiceSoap12" type="tns:CustomerServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CustomerRegister">
+      <soap12:operation soapAction="http://tempuri.org/CustomerRegister" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerLogin">
+      <soap12:operation soapAction="http://tempuri.org/CustomerLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetCustomerInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInfoWithID">
+      <soap12:operation soapAction="http://tempuri.org/GetCustomerInfoWithID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCustomers">
+      <soap12:operation soapAction="http://tempuri.org/GetAllCustomers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerEmail">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCustomerEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerPhone">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCustomerPhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerAddress">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCustomerAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerPassword">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCustomerPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CustomerService">
+    <wsdl:port name="CustomerServiceSoap" binding="tns:CustomerServiceSoap">
+      <soap:address location="https://localhost:44349/CustomerService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CustomerServiceSoap12" binding="tns:CustomerServiceSoap12">
+      <soap12:address location="https://localhost:44349/CustomerService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

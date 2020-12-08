@@ -1,0 +1,153 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans Light';
+    letter-spacing: .05em;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: darkgrey;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    color: darkslategrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+.leftwrapper {
+    float: left;
+    width: 20%;
+}
+
+.barcontent {
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: white;
+    border: solid;
+    border-color: cornflowerblue;
+    border-top-width: 3px;
+}
+
+.bartitle {
+    text-align: center;
+    margin: 20px;
+}
+
+.linkrow {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 15px;
+    background-color: cornflowerblue;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+    a:visited {
+        color: #fff;
+    }
+
+    a:hover {
+        color: lightpink;
+    }
+
+.rightwrapper {
+    float: right;
+    width: 80%;
+    height: 1600px;
+    box-sizing: border-box;
+}
+
+.infobox {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 1400px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: white;
+    border: solid;
+    border-color: cornflowerblue;
+    border-top-width: 3px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 200px;
+}
+
+.tablerow {
+    width: 30%;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.property {
+    float: left;
+    width: 50%;
+}
+
+.value {
+    float: left;
+    width: 50%;
+}
+
+.textbox {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+.btn {
+    text-align: center;
+    background-color: cornflowerblue;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+    .btn:hover {
+        color: lightpink;
+    }
+
+
+.floatclear {
+    clear: both;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}

@@ -1,0 +1,272 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans Light';
+    letter-spacing: .05em;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: darkgrey;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    color: darkslategrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+.leftwrapper {
+    float: left;
+    width: 20%;
+}
+
+.barcontent {
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: white;
+    border: solid;
+    border-color: cornflowerblue;
+    border-top-width: 3px;
+}
+
+.bartitle {
+    text-align: center;
+    margin: 20px;
+}
+
+.linkrow {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 15px;
+    background-color: cornflowerblue;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+    a:visited {
+        color: #fff;
+    }
+
+    a:hover {
+        color: lightpink;
+    }
+
+.rightwrapper {
+    float: right;
+    width: 80%;
+    height: 1100px;
+    box-sizing: border-box;
+}
+
+.infobox {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 1000px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: white;
+    border: solid;
+    border-color: cornflowerblue;
+    border-top-width: 3px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 200px;
+}
+
+.cardbox {
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    border: groove;
+    border-radius: 15px;
+    border-color: slategrey;
+}
+
+.imgcard {
+    float: left;
+    width: 50%;
+    height: 480px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.infocard {
+    float: right;
+    width: 45%;
+    height: 600px;
+}
+
+.infotitle {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.orderid {
+    width: 95%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: dashed;
+}
+
+.productid {
+    width: 95%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: dashed;
+}
+
+.customerid {
+    width: 95%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: dashed;
+}
+
+.storeid {
+    width: 95%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: dashed;
+}
+
+.state {
+    width: 95%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.opbtnwrapper {
+    width: 95%;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.opbtn {
+    text-align: center;
+    background-color: cornflowerblue;
+    color: #fff;
+    height: 70%;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+    .opbtn:hover {
+        background-color: red;
+    }
+
+.btnrow {
+    width: 80%;
+    height: 40px;
+    margin: auto;
+}
+
+.leftbtnwrapper {
+    float: left;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+
+.leftbtn {
+    text-align: center;
+    background-color: cornflowerblue;
+    color: #fff;
+    height: 100%;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+    .leftbtn:hover {
+        color: lightpink;
+    }
+
+.pageinfo {
+    float: left;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+
+.rightbtnwrapper {
+    float: left;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+
+.rightbtn {
+    text-align: center;
+    background-color: cornflowerblue;
+    color: #fff;
+    height: 100%;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+    .rightbtn:hover {
+        color: lightpink;
+    }
+
+.btn {
+    text-align: center;
+    background-color: cornflowerblue;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+    .btn:hover {
+        color: lightpink;
+    }
+
+.floatclear {
+    clear: both;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
